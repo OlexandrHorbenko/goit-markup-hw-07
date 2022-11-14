@@ -1,0 +1,35 @@
+.experience-list {
+    display: flex;
+    gap: 30px;
+}
+
+.experience-item {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.experience-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--gray-black);
+    margin-bottom: 10px;
+}
+
+.experience-description {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+}
+
+.experience-box {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--team-background);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}

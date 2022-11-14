@@ -1,0 +1,52 @@
+.slogan {
+    background-color: var(--slogan-bg);
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.slogan-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gray-white);
+    display: block;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slogan-btn {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+    border-radius: 4px;
+    background-color: var(--gray-blue);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--gray-white);
+    margin-top: 30px;
+    min-width: 216px;
+    padding: 10px 32px;
+    transition: background-color var(--transition-param);
+}
+
+.slogan-btn:hover,
+.slogan-btn:focus {
+    background-color: var(--gray-blue-button);
+}

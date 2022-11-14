@@ -1,0 +1,85 @@
+.team {
+    background-color: var(--team-background);
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--gray-black);
+    margin-bottom: 50px;
+}
+
+.team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--gray-white);
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.team-hero {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--gray-black);
+    margin-bottom: 10px;
+}
+
+.team-hero-prof {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.team-about-container {
+    padding: 30px 0;
+}
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-soc-item {
+    height: 44px;
+    width: 44px;
+}
+
+.team-soc-link {
+    width: 100%;
+    height: 100%;
+    background: var(--gray-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition-param);
+}
+
+.team-soc-icon {
+    fill: var(--border-color);
+    transition: fill var(--transition-param);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: var(--gray-blue);
+}
+
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+    fill: var(--gray-white);
+}
