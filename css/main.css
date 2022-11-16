@@ -1,9 +1,3 @@
-body {
-  font-family: "roboto", sans-serif;
-  background-color: var(--gray-white);
-  color: var(--maine_color);
-}
-
 .list {
   list-style: none;
 }
@@ -40,6 +34,12 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  background-color: var(--gray-white);
+  color: var(--maine_color);
 }
 
 :root {
