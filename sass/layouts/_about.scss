@@ -1,33 +1,27 @@
-.experience-list {
+.about__experience {
     display: flex;
     gap: 30px;
 }
 
-.experience-item {
+.experience__item {
     flex-basis: calc((100% - 90px) / 4);
 }
 
-.experience-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
+.experience__title {
+    @include font(14px, calc(16 / 14), 700, 0.03em);
     text-transform: uppercase;
     color: var(--gray-black);
     margin-bottom: 10px;
 }
 
-.experience-description {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
+.experience__description {
+    @include font(14px, calc(24 / 14), null, 0.03em);
 }
 
-.experience-box {
+.experience__box {
     width: 270px;
     height: 120px;
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     justify-content: center;
     background-color: var(--team-background);
     border-radius: 4px;

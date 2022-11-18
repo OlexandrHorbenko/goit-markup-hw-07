@@ -1,9 +1,6 @@
 .partner-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+    @include font(36px, calc(42 / 36), 700, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--gray-black);
   margin-bottom: 50px;
 }
@@ -24,8 +21,7 @@
   height: 100%;
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   transition: border-color var(--transition-param);
   &:hover,

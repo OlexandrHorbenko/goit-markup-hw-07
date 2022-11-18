@@ -1,39 +1,6 @@
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding-left: 0;
-}
-
-button {
-  cursor: pointer;
-}
-
-address {
-  font-style: normal;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.footer-soc-link, .partner-link, .team-soc-link, .experience__box, .connect__tel, .connect__mail, .modal-close {
+  display: flex;
+  align-items: center;
 }
 
 body {
@@ -77,6 +44,44 @@ body {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -130,8 +135,6 @@ body {
   position: absolute;
   right: 8px;
   top: 8px;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -143,11 +146,11 @@ body {
 }
 
 .modal-title {
-  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
+  font-weight: 700;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--gray-black);
   margin-bottom: 12px;
 }
@@ -158,12 +161,11 @@ body {
 }
 
 .input-label-text {
-  display: block;
-  margin-bottom: 4px;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
+  display: block;
+  margin-bottom: 4px;
   color: var(--maine_color);
 }
 
@@ -177,7 +179,6 @@ body {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
@@ -200,7 +201,6 @@ body {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
@@ -281,7 +281,6 @@ body {
 }
 
 .modal-checkbox-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
@@ -290,7 +289,6 @@ body {
 }
 
 .modal-checkbox-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
@@ -306,12 +304,12 @@ body {
   border-color: transparent;
   font-family: inherit;
   font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--gray-white);
   min-width: 200px;
   height: 50px;
@@ -328,40 +326,43 @@ body {
   border-bottom: 1px solid var(--ramka-top);
 }
 
-.header-cont {
+.header__container {
   display: flex;
   justify-content: space-between;
 }
 
-.header-logo {
+.logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.1923076923;
+  font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--gray-black-logo);
+}
+
+.logo__navigation {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
-.header-logo-part {
+.logo__part {
   color: var(--gray-blue);
 }
 
-.header-navigation {
+.navigation {
   display: flex;
 }
 
-.header-list {
+.menu {
   display: flex;
   gap: 50px;
 }
 
-.header-link {
-  font-weight: 500;
+.menu__link {
   font-size: 14px;
   line-height: 1.1428571429;
+  font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--gray-black);
   padding: 32px 0;
@@ -369,10 +370,10 @@ body {
   transition: color var(--transition-param);
   position: relative;
 }
-.header-link:hover, .header-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--gray-blue);
 }
-.header-link.current:after {
+.menu__link.current:after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -388,70 +389,50 @@ body {
   color: var(--gray-blue);
 }
 
-.header-adress {
+.connect {
   display: flex;
   gap: 50px;
 }
 
-.header-tel {
-  font-weight: 500;
+.connect__tel, .connect__mail {
   font-size: 14px;
   line-height: 1.1428571429;
+  font-weight: 500;
   letter-spacing: 0.02em;
   color: inherit;
   padding: 32px 0;
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition: color var(--transition-param);
 }
-.header-tel:hover, .header-tel:focus {
+.connect__tel:hover, .connect__tel:focus, .connect__mail:hover, .connect__mail:focus {
   color: var(--gray-blue);
 }
 
-.tel-icon {
+.connect__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.header-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.02em;
-  color: inherit;
-  padding: 32px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color var(--transition-param);
-}
-.header-mail:hover, .header-mail:focus {
-  color: var(--gray-blue);
-}
-
-.mail-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.slogan {
+.hero {
   background-color: var(--slogan-bg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
+  max-width: 1600px;
+}
+
+.hero__container {
   padding-top: 200px;
   padding-bottom: 200px;
-  max-width: 1600px;
   margin: 0 auto;
 }
 
-.slogan-title {
-  font-weight: 900;
+.wrap__title {
   font-size: 44px;
   line-height: 1.3636363636;
+  font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--gray-white);
@@ -461,58 +442,56 @@ body {
   margin-right: auto;
 }
 
-.slogan-btn {
+.wrap__btn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
   border-radius: 4px;
   background-color: var(--gray-blue);
   font-family: inherit;
   font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  text-align: center;
+  font-weight: 700;
   letter-spacing: 0.06em;
+  text-align: center;
   color: var(--gray-white);
   margin-top: 30px;
   min-width: 216px;
   padding: 10px 32px;
   transition: background-color var(--transition-param);
 }
-.slogan-btn:hover, .slogan-btn:focus {
+.wrap__btn:hover, .wrap__btn:focus {
   background-color: var(--gray-blue-button);
 }
 
-.experience-list {
+.about__experience {
   display: flex;
   gap: 30px;
 }
 
-.experience-item {
+.experience__item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.experience-title {
-  font-weight: 700;
+.experience__title {
   font-size: 14px;
   line-height: 1.1428571429;
+  font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--gray-black);
   margin-bottom: 10px;
 }
 
-.experience-description {
+.experience__description {
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
 }
 
-.experience-box {
+.experience__box {
   width: 270px;
   height: 120px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   background-color: var(--team-background);
   border-radius: 4px;
@@ -524,11 +503,11 @@ body {
 }
 
 .what-we-do-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.1666666667;
-  text-align: center;
+  font-weight: 700;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--gray-black);
   margin-bottom: 50px;
 }
@@ -552,9 +531,9 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
+  font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
@@ -573,11 +552,11 @@ body {
 }
 
 .team-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.1666666667;
-  text-align: center;
+  font-weight: 700;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--gray-black);
   margin-bottom: 50px;
 }
@@ -590,11 +569,11 @@ body {
 }
 
 .team-hero {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
-  text-align: center;
+  font-weight: 500;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--gray-black);
   margin-bottom: 10px;
 }
@@ -602,8 +581,8 @@ body {
 .team-hero-prof {
   font-size: 16px;
   line-height: 1.1875;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 16px;
 }
 
@@ -627,8 +606,6 @@ body {
   height: 100%;
   background: var(--gray-white);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition: background-color var(--transition-param);
 }
@@ -645,11 +622,11 @@ body {
 }
 
 .partner-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.1666666667;
-  text-align: center;
+  font-weight: 700;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--gray-black);
   margin-bottom: 50px;
 }
@@ -670,8 +647,6 @@ body {
   height: 100%;
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition: border-color var(--transition-param);
 }
@@ -702,9 +677,9 @@ body {
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.1923076923;
+  font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--gray-white);
 }
@@ -756,9 +731,9 @@ body {
 }
 
 .footer-soc-title {
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1428571429;
+  font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--gray-white);
@@ -781,8 +756,6 @@ body {
   height: 100%;
   background: var(--footer-icon);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition: background-color var(--transition-param);
 }
@@ -799,9 +772,9 @@ body {
 }
 
 .footer-join-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
+  font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--gray-white);
@@ -813,11 +786,10 @@ body {
 }
 
 .footer-email-input {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  align-items: center;
   letter-spacing: 0.03em;
+  align-items: center;
   color: var(--gray-white);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -865,12 +837,12 @@ body {
   border-color: transparent;
   font-family: inherit;
   font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--gray-white);
   min-width: 200px;
   height: 50px;
@@ -911,11 +883,11 @@ body {
   font-family: inherit;
   background-color: var(--team-background);
   border-color: transparent;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
-  text-align: center;
+  font-weight: 500;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--gray-black);
   padding: 6px 22px;
   min-width: 73px;
@@ -957,7 +929,6 @@ body {
   position: absolute;
   top: 0;
   padding: 63px 24px;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
@@ -987,9 +958,9 @@ body {
 }
 
 .hero-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--gray-black);
   display: block;

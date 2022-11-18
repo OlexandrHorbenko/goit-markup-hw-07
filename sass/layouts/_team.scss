@@ -8,11 +8,8 @@
 }
 
 .team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  @include font(36px, calc(42 / 36), 700, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--gray-black);
   margin-bottom: 50px;
 }
@@ -26,20 +23,15 @@
 }
 
 .team-hero {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
+    @include font(16px, calc(19 / 16), 500, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--gray-black);
   margin-bottom: 10px;
 }
 
 .team-hero-prof {
-  font-size: 16px;
-  line-height: calc(19 / 16);
+  @include font(16px, calc(19 / 16), null, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
 
@@ -63,8 +55,7 @@
   height: 100%;
   background: var(--gray-white);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   transition: background-color var(--transition-param);
   &:hover,
